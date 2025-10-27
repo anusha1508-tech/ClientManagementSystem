@@ -26,6 +26,11 @@ public class ClientController {
 	
 	@Autowired
 	private ClientService clientService;
+
+    @GetMapping("/test")
+    public String test() {
+        return "Welcome to test";
+    }
 	
 	@GetMapping("/showall")
 	public List<Client> showall(){
