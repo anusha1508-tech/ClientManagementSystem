@@ -34,7 +34,6 @@ public class ClientController {
 	
 	@GetMapping("/showall")
 	public List<Client> showall(){
-		//return clientRepository.findAll();
 		return clientService.showall();
 		
 	}
