@@ -4,10 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import infosys.client.Repository.ClientRepository;
 import infosys.client.model.Client;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class ClientService {
 	
 	@Autowired
